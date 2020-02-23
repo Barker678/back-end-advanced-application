@@ -1,0 +1,11 @@
+#list {background-color: rgb(82, 82, 82);
+
+    #body{background-image: url('../images/bigimg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;}
+    #grey{background-color: rgba(51, 49, 49, 0.5); border-style: solid; border-color: rgb(54, 54, 54);}
+    form{ width: 100%;}
+    #cover{ display: flex; align-items: center;}
+    #cover-caption{width: 100%;}
+    #body-banner{ background-color: #333232; border-style: solid; border-color: rgb(54, 54, 54);}
+    #more {display: none;}
+    .bg-dark{background-color:#343a4094 !important}a.bg-dark:hover,a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus{background-color:#1d2124c5 !important}
+}

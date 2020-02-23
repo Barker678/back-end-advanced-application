@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Games 4 U">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/781ceb5932.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body id="list">
+        <header>
+            <div id="header-top">
+                <div class="row">
+                    <div class="col-md-12 text-center d-sm-block d-lg-none">
+                        <div class="widget ml-4 mt-5" style="float: left;">
+                            <i class="fab fa-facebook" style="cursor: pointer;"></i>
+                            <i class="fab fa-twitter" style="cursor: pointer;"></i>
+                            <i class="fab fa-instagram" style="cursor: pointer;"></i>
+                        </div>
+                        <a class="navbar-brand m-0" href="index.html"><img src="./images/Logo.png" alt="Logo" /></a>
+                        <i class="fas fa-shopping-basket d-sm-block d-lg-none mt-5 mr-5" style="float: right; color: #ffffff;"></i>
+                    </div>
+                    <nav class="navbar navbar-expand-lg text-white navbar-dark bg-dark" style="display: contents;">
+                        <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mb-2 mt-2" id="navbarToggler1">
+                            <div class="container" style="display: inline-flex; align-items: center;">
+                                <div class="col-3 col-md-6 ml-0 ml-lg-5" style="display: inline-flex; max-width: fit-content;">
+                                    <a class="navbar-brand mb-0 d-none d-lg-block" href="index.html"><img src="./images/Logo.png" alt="Logo" /></a>
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-light my-2 my-sm-0" id="input" type="submit">Search</button>
+                                    </form>
+                                </div>
+                                <div class="col-1 col-sm-3 my-auto pt-2 text-lg-right text-left text-sm-center">
+                                    <div class="widget d-none d-lg-block">
+                                        <i class="fab fa-facebook" style="cursor: pointer;"></i>
+                                        <i class="fab fa-twitter" style="cursor: pointer;"></i>
+                                        <i class="fab fa-instagram" style="cursor: pointer;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-2 my-auto text-dark    " style="display: contents;">
+                                    <button class="btn btn-outline-light my-2 my-sm-0 mr-3" onclick="document.getElementById('id01').style.display='block'" style="width:auto; height: auto;">Login</button>
+                                    <a href="contact.html"><button class="btn btn-outline-light my-2 my-sm-0" style="height: auto; width: auto;" type="button">Sign Up</button></a>
+                                    <div class="widget pl-3">
+                                        <i class="fas fa-shopping-basket d-none d-lg-block" style="cursor: pointer;"></i>
+                                    </div>
+                                    <div id="modal">
+                                        <div id="id01" class="modal" style="z-index: 3000;">
+                                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="cursor: pointer;">&times;</span>
+                                            <form class="modal-content" action="/action_page.php" style="width: 70%;"><!--No link as not doing back end-->
+                                                <div class="container" style="display: flex; flex-flow: column; max-width: fit-content;">
+                                                    <h1>Log In</h1>
+                                                    <p>Fill in your details to log in</p>
+                                                    <hr>
+                                                    <label for="email"><b>Email/Username</b></label>
+                                                    <input type="text" placeholder="Enter Email or Username" name="email/user" required>
+        
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                                    <!--All required to make an account-->
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me <!--Optional remember me -->
+                                                    </label>
+                                                    <div class="clearfix">
+                                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width: 50%;">Cancel</button>
+                                                        <button type="submit" class="signupbtn" style="width: 50%;">Log In</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg text-white navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="overflow: visible;" id="navbarToggler">
+                    <ul class="navbar-nav mx-auto" style="list-style-type: none; font-family: sans-serif; inline-size: fit-content; overflow: visible;">
+                        <div class="col-lg-12 text-center p-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="List.html" id="navbardrop" data-toggle="dropdown"><i class="fab fa-playstation    "></i> Playstation</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton" style="position: absolute;">
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Games</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Consoles</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">VR</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Accessories</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Network</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Other</a>
+                                </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="List.html" id="navbardrop" data-toggle="dropdown"><i class="fab fa-xbox    "></i> Xbox</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton" style="position: absolute;">
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Games</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Consoles</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Accessories</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Digital</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Other</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="List.html" id="navbardrop" data-toggle="dropdown"><i class="fas fa-puzzle-piece    "></i> Nintendo</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton" style="position: absolute;">
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Games</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Consoles</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Accessories</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">eShop</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">DS</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">other</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="List.html" id="navbardrop" data-toggle="dropdown"><i class="fas fa-desktop    "></i> PC</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton" style="position: absolute;">
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Games</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Gaming Systems</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Accessories</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Upgrades</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Other</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="List.html" id="navbardrop" data-toggle="dropdown"><i class="fa fa-random    "></i> Other</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton" style="position: absolute;">
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Merch</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Tech</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Mobile</a>
+                                    <a class="dropdown-item text-white bg-dark" href="List.html">Collectibles</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+                    
+        </header>
+        <div id="body">
+            <br>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                       <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                    <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 my-3">
+                        <div class="card text-white" id="grey" style="border: 0;">
+                            <a href="item.html" style="text-decoration: none; color: white;">
+                                <img class="card-img-top" src="./images/350x250.png" alt="">
+                                <div class="card-body">
+                                    <div class="card-title"><h5>game title</h5></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor labore aliquam error voluptatem sunt temporibus, repellendus voluptate deserunt reprehenderit quidem, distinctio provident porro iure delectus eveniet molestias modi vel.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link bg-dark text-white-50" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white-50" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white-50" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white-50" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link bg-dark text-white-50" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+        </div>
+        <section id="footer">
+            <div class="container text-center">
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Our Products</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="List.html"><i class="fa fa-angle-double-right"></i>Video Games</a></li>
+                            <li><a href="List.html"><i class="fa fa-angle-double-right"></i>Platforms</a></li>
+                            <li><a href="List.html"><i class="fa fa-angle-double-right"></i>Accesories</a></li>
+                            <li><a href="List.html"><i class="fa fa-angle-double-right"></i>Upgrades</a></li>
+                            <li><a href="List.html"><i class="fa fa-angle-double-right"></i>Network</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="faq.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div id="map" style="clear: both; height: 200px;"></div >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </hr>
+                </div>	
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sit quidem tempore doloremque hic optio, quibusdam porro molestias quae voluptate et eum sapiente, suscipit non sed! Reiciendis delectus quam mollitia?</p>
+                        <p class="h6">&copy All right Reversed.<a class="text-green ml-2"target="_blank">Jorden Barker</a></p>
+                    </div>
+                    </hr>
+                </div>	
+            </div>
+        </section>
+    </body>
+    <script>
+        var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
+
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 52.0567, lng: 1.1482},
+            zoom: 8
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ_a-lcginE8CTlzYVP72-BvDlRApS65E&callback=initMap"
+      async defer></script>
+
+    <script src="./node_modules/jquery-ui/external/jquery-3.1.0/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>

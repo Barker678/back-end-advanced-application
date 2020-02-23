@@ -1,0 +1,21 @@
+{extend file="layouts/main.tpl"}
+{block name="body"}
+<h2>Gibberish terms and conditions</h2>
+<p>However, in accepting such obligations, You may use this license is required to exercise the rights and licenses granted by Recipient relating to the extent prohibited by statute or regulation, such description must be included in the event of termination under Sections 2.1 and 2.2 above. Larger Works. You may add your name as a whole, an original work has the right to make certain that everyone has such rights, we need to ensure or guarantee that the Source Code and Modifications, in each case including portions thereof and corresponding documentation released with the case that a license that permits the licensee to freely copy, modify and redistribute the Licensed Product. You must duplicate, to the Notice.
+    <br>
+</p>
+<p>
+    If it is subject to the terms and conditions of the Licensed Product directly or indirectly through you, then this takes effect immediately upon announcement. If you are re-using, b) a copy of this License. However, in accepting such obligations, You may always be distributed and modified, as well as in related documentation, stating that you distribute are governed by California law provisions (except to note that you are also required to allow Recipient to distribute the Executable version available; and if You fail to cure such breach within thirty days after you make modifications or work under the GFDL. In other words, go ahead and share NetHack, but don't try to stop anyone else from sharing it farther.
+    <br>
+</p>
+<p>
+    Redistribution and use in source code for all parties, and never knowingly distribute a complete, unmodified copy of this license. General Provisions (10) Any use, reproduction or distribution of the CC-BY-SA license If you wish to distribute. This license establishes the terms of Paragraph 1 above (including distributing this License for more details. You should also get your employer (if you work as originally made available under a compatible license which requires attribution, you must, in a lawsuit) alleging that the Copyright Holder and seek a different licensing arrangement.
+    <br>
+</p>
+<p>    
+    Definitions "Copyright Holder" is whoever is named in the preceding Article, the Recipient and shall take other steps (such as deliberate and grossly negligent acts) or agreed to in writing, the Copyright Holder. A Package modified in such a notice and this License are offered by you or any right relating to Licensed Product due to its Contributions set forth in Article 1 (Definitions) 1. Font Program" shall mean the copyright notice that it is Recipient's responsibility to acquire that license before distributing the Program in a trademark sense to endorse or promote products derived from the Contributor Version; 2) separate from the Work.
+    <br>
+</p>
+<p> 
+    If there is no warranty for this Package to another file that contains a notice stating that the original copyright notices and disclaimers of Apple or any Contributor, and informs licensees how to get the Standard Version of this license do not include anything that is used with the `Work' referring to the credit given on this website, or c) a list of conditions and the date You accept this license. If a Derived Work under any particular circumstance, the balance of the Program does. You may distribute this software without specific, written prior permission.</p>
+{/block}
